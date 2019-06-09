@@ -25,11 +25,9 @@ export class SettingsService {
 
       this.ajustes = JSON.parse(localStorage.getItem('ajustes'));
 
-      console.log('Cargando de localstorage');
-
       this.aplicarTema(this.ajustes.tema);
     }else{
-      console.log('Usando Valores por defecto');
+
       this.aplicarTema(this.ajustes.tema);
     }
 
